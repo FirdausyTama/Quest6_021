@@ -83,6 +83,8 @@ fun RencanaStudiView(
             Box {
                 Icon(
                     imageVector = Icons.Filled.Notifications,
+                    contentDescription = "",
+                    tint = Color.White
                 )
             }
         }
