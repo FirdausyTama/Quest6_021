@@ -1,4 +1,6 @@
 package com.example.navigasicompose.ui.view.viewmodel
 
-class RencanaStudyViewModel {
+import androidx.lifecycle.ViewModel
+
+class RencanaStudyViewModel : ViewModel() {
 }
