@@ -98,6 +98,7 @@ fun RencanaStudiView(
                         topStart = 15.dp
                     )
                 )
+                .fillMaxSize(),
         ){
 
         }
