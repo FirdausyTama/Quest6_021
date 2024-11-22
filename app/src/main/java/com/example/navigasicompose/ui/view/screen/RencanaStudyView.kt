@@ -39,7 +39,6 @@ import com.example.navigasicompose.R
 import com.example.navigasicompose.data.MataKuliah
 import com.example.navigasicompose.data.RuangKelas
 import com.example.navigasicompose.model.Mahasiswa
-import com.example.navigasicompose.model.RencanaStudi
 import com.example.navigasicompose.ui.widget.DynamicSelectedTextField
 
 @Composable
@@ -65,7 +64,7 @@ fun RencanaStudiView(
     ){
         Row (
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth()
                 .padding(16.dp), verticalAlignment = Alignment.CenterVertically
         ){
             Image(
