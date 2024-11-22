@@ -13,7 +13,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
@@ -37,7 +39,6 @@ import com.example.navigasicompose.R
 
 @Composable
 fun MahasiswaFormView(
-    modifier: Modifier,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onBackButtonClicked: () -> Unit
 ){
@@ -70,7 +71,7 @@ fun MahasiswaFormView(
         ){
             Image(
                 painter = painterResource(
-                    id = R.drawable.profil
+                    id = R.drawable.umy
                 ),
                 contentDescription = "",
                 modifier = Modifier.padding(45.dp)
@@ -80,6 +81,7 @@ fun MahasiswaFormView(
                 Text(
                     text = "Universitas Muhamadiyah Yogyakarta",
                     color = Color.Red,
+                    fontSize = 15.sp,
                     fontWeight = FontWeight.Bold
                 )
                 Text(
@@ -143,7 +145,7 @@ fun MahasiswaFormView(
                     label = { Text(text = "Nama")},
                     leadingIcon = {
                         Icon(
-                            imageVector = Icons.Filled.Info,
+                            imageVector = Icons.Filled.Person,
                             contentDescription = ""
                         )
                     },
@@ -162,7 +164,7 @@ fun MahasiswaFormView(
                     label = { Text(text = "Email")},
                     leadingIcon = {
                         Icon(
-                            imageVector = Icons.Filled.Info,
+                            imageVector = Icons.Filled.Email,
                             contentDescription = ""
                         )
                     },
